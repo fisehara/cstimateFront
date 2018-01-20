@@ -1,11 +1,14 @@
-===== cstimateFront
+cstimateFront
+=====
 
-cstimates frontend cloned from Maximilian Stoibers repository:
+cstimates frontend 
+cloned from Maximilian Stoibers react boilerplate repository:
 
-git://github.com/react-boilerplate/react-boilerplate.git
 
+[Max Stoibers ReactBoilerplate!](git://github.com/react-boilerplate/react-boilerplate.git)
 
-==== License
+License
+==== 
 
 This project is licensed under the MIT license, Copyright (c) 2017 Maximilian
 Stoiber. For more information see `LICENSE.md`.
