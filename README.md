@@ -5,7 +5,7 @@ cstimates frontend
 cloned from Maximilian Stoibers react boilerplate repository:
 
 
-[Max Stoibers ReactBoilerplate!](git://github.com/react-boilerplate/react-boilerplate.git)
+[Max Stoibers ReactBoilerplate!](github.com/react-boilerplate/react-boilerplate.git)
 
 License
 ==== 
