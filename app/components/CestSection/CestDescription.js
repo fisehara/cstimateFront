@@ -3,6 +3,7 @@ import { globalColors } from "../../globalColors";
 
 export default styled.textarea`
   width: 85%;
+  height: calc(7.5em);
   margin: 0.5em auto;
   display: inline-flex;
   padding: 0.25em 0.25em;
@@ -15,6 +16,5 @@ export default styled.textarea`
   background: ${globalColors._background};
   word-wrap: break-word;
   resize: none;
-  max-height: 84px;
   font-size: 14px;
 `;

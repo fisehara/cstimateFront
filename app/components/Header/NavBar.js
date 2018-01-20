@@ -7,7 +7,7 @@ export default styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 4px solid ${globalColors._button};
-  border-bottom: 4px solid ${globalColors._button};
+  border-top: 4px solid ${globalColors._cestprimary};
+  border-bottom: 4px solid ${globalColors._cestprimary};
   background: ${globalColors._background};
 `;

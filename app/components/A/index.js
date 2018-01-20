@@ -1,14 +1,15 @@
 /**
  * A link to a certain page, an anchor tag
  */
+import { globalColors } from "../../globalColors";
 
 import styled from 'styled-components';
 
 const A = styled.a`
-  color: #FFaddd;
-
+  color: ${globalColors._foregroundKicker};
+  // text-decoration: none;
   &:hover {
-    color: #6cc0e5;
+    color: ${globalColors._cestsecond};
   }
 `;
 

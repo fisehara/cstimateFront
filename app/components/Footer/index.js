@@ -1,10 +1,21 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { globalColors } from "../../globalColors";
 
-import A from 'components/A';
 import LocaleToggle from 'containers/LocaleToggle';
 import Wrapper from './Wrapper';
 import messages from './messages';
+import styled from 'styled-components';
+
+// Footer A
+const A = styled.a`
+  color: ${globalColors._foregroundKicker};
+  // text-decoration: none;
+  &:hover {
+    color: ${globalColors._cestsecond};
+  }
+`;
+
 
 function Footer() {
   return (
@@ -12,9 +23,9 @@ function Footer() {
       <section>
         <FormattedMessage {...messages.licenseMessage} />
       </section>
-      {/* <section>
+      <section>
         <LocaleToggle />
-      </section> */}
+      </section>
       <section>
         <FormattedMessage
           {...messages.authorMessage}

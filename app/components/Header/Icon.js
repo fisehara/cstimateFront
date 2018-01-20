@@ -19,20 +19,20 @@ const StyledIcon = styled(Icon)`
   width: 40px;
 
   #cesticon1 {
-    fill: rgb(255, 236, 165);
+    fill: ${globalColors._cestsecond};
   }
   #cesticon2 {
-    fill: rgb(255, 192, 44);
+    fill: ${globalColors._cestprimary};
   }
 
   &:hover {
-    background: ${globalColors._button};
+    background: ${globalColors._cestprimary};
   }
 
   &:hover #cesticon1,
   &:hover #cesticon2 {
-    fill: #fff; // rgb(255, 236, 165);
-    // stroke:  ${globalColors._button};
+    fill: #fff;
+    // stroke:  ${globalColors._cestprimary};
   }
 `;
 

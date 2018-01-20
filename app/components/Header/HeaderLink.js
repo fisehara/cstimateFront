@@ -9,11 +9,11 @@ export default styled(Link)`
   font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  color: ${globalColors._button};
+  color: ${globalColors._cestprimary};
   background: ${globalColors._background};
 
   &:hover {
-    background: ${globalColors._button};
+    background: ${globalColors._cestprimary};
     color: ${globalColors._background};
   }
 `;
