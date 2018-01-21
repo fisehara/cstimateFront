@@ -5,7 +5,7 @@ const Wrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 3em 0;
-  border-top: 4px solid ${globalColors._button};
+  border-top: 2px solid ${globalColors._button};
 
   padding: 0.25em 2em;
   text-decoration: none;
@@ -13,7 +13,7 @@ const Wrapper = styled.footer`
   -webkit-touch-callout: none;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
   
   background: ${globalColors._backgroundKicker};
   color: ${globalColors._foregroundKicker};

@@ -52,7 +52,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
     return (
       <article>
         <Helmet>
-          <title>Home Page</title>
+          {/* <title><title>C(R/L)OUD ESTIMATE</title></title> */}
           <meta name="description" content="A React.js Boilerplate application homepage" />
         </Helmet>
         <div>

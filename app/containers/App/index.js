@@ -33,8 +33,8 @@ export default function App() {
     <Header />
     <AppWrapper>
       <Helmet
-        titleTemplate="%s - React.js Boilerplate"
-        defaultTitle="React.js Boilerplate"
+        titleTemplate="CSTIMATE"
+        defaultTitle="CSTIMATE"
       >
         <meta name="description" content="CSTIMATE" />
       </Helmet>
