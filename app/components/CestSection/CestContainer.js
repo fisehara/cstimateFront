@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 
 export default styled.div`
-max-width: 30em;  
-background: ${globalColors._cestprimary};
+padding: 0.25em 0.25em;
+max-width: 30em;
+border-radius: 0.25em;
+background: ${globalColors._cestsecond};
+margin: 0.5em auto;
 `;

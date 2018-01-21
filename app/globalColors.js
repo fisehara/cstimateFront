@@ -14,4 +14,5 @@ export const globalColors = {
   _border : '#2D251E',
   _action : '#7C4D3E',
   _foreground: '#2D251E',
+  _shadow: '#66605B',
 };
