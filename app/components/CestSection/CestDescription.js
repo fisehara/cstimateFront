@@ -4,7 +4,7 @@ import { globalColors } from "../../globalColors";
 
 const CestTextarea = styled.textarea`
   width: 100%;
-  height: 5em;
+  height: 6em;
   display: block;
   padding: 0.35em 0.35em;
   border-radius: 0.25em;
@@ -29,7 +29,7 @@ const CestTextarea = styled.textarea`
 
 const CestTextDiv = styled.div`
   width: 100%;
-  height: 5em;
+  height: 6em;
   color: ${globalColors._text};
   background: ${globalColors._cestsecond};
   display: block;
@@ -51,7 +51,10 @@ class CestTextField extends React.Component {
     super(props);
     this.state = {
       editing: false,
-      text: props.text,
+      text: props.text
+        .replace(/\n/g, " ")
+        .replace(/ +/g, " ")
+        .substring(0, 160),
       fontStyle: props.fontStyle
     };
   }
@@ -63,18 +66,21 @@ class CestTextField extends React.Component {
   };
 
   save = event => {
-    var val = event.target.value;
-    console.log(val);
     this.setState({
-      text: val,
+      text: event.target.value,
       editing: false
     });
   };
 
   updateText = event => {
-    this.setState({
-      text: event.target.value
-    });
+    if (event.target.value.length <= 160) {
+      this.setState({
+        text: event.target.value
+          .replace(/\n/g, " ")
+          .replace(/ +/g, " ")
+          .replace(/\.+/g, ".")
+      });
+    }
   };
 
   renderNormal = () => {
@@ -89,6 +95,7 @@ class CestTextField extends React.Component {
     return (
       <CestTextarea
         onBlur={this.save}
+        onDragEnterCapture={this.save}
         value={this.state.text}
         onChange={this.updateText}
         autoFocus={true}
