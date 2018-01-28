@@ -3,61 +3,56 @@ import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 
 const CestTextarea = styled.textarea`
-  width: 95%;
-  height: calc(8.2em);
-  display: inline-flex;
+  width: 100%;
+  height: 5em;
+  display: block;
   padding: 0.35em 0.35em;
+  border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
-  border-radius: 0.25em;
-  -webkit-box-shadow: inset 0 0 0.25em -0.05em ${globalColors._shadow};
-  -moz-box-shadow: inset 0 0 0.25em -0.05em ${globalColors._shadow};
-  box-shadow: inset 0 0 0.25em -0.05em ${globalColors._shadow};
+  -webkit-box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
+  -moz-box-shadow: inset 0 0 2pt 1pt ${globalColors._shadow};
+  box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
 
   color: ${globalColors._text};
   background: ${globalColors._cestsecond};
+  filter: brightness(105%);
   word-wrap: break-word;
   resize: none;
   font-size: 14px;
   line-height: 20px;
-  font-weight: "bold";
-  font-variant: normal;
-  font-style: normal;
-  font-family: "Rubik", sans-serif;
+  font-family: ${props => props.fontStyle};
   :focus {
     outline: none !important;
   }
 `;
 
 const CestTextDiv = styled.div`
-  width: 95%;
+  width: 100%;
+  height: 5em;
   color: ${globalColors._text};
-  display: inline-flex;
+  background: ${globalColors._cestsecond};
+  display: block;
   padding: 0.35em 0.35em;
   border-radius: 0.25em;
-  height: calc(8.2em);
   word-wrap: break-word;
 
   font-size: 14px;
   line-height: 20px;
-  font-weight: "bold";
-  font-variant: normal;
-  font-style: normal;
-  font-family: "Rubik", sans-serif;
+  font-family: ${props => props.fontStyle};
 `;
 
-// toTextarea = () => {
-
-// }
-
-export default props => <CestTextField text={props.cestText} />;
+export default props => (
+  <CestTextField text={props.cestText} fontStyle={props.fontStyle} />
+);
 
 class CestTextField extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       editing: false,
-      text: props.text
+      text: props.text,
+      fontStyle: props.fontStyle
     };
   }
 
@@ -79,20 +74,25 @@ class CestTextField extends React.Component {
   updateText = event => {
     this.setState({
       text: event.target.value
-    })
-  }
+    });
+  };
 
   renderNormal = () => {
     // ** Render "state.text" inside your <p> whether its empty or not...
-    return <CestTextDiv onClick={this.edit}>{this.state.text}</CestTextDiv>;
+    return (
+      <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
+        {this.state.text}
+      </CestTextDiv>
+    );
   };
   renderForm = () => {
     return (
       <CestTextarea
         onBlur={this.save}
         value={this.state.text}
-        onChange = {this.updateText}
+        onChange={this.updateText}
         autoFocus={true}
+        fontStyle={this.state.fontStyle}
       />
     );
   };

@@ -61,65 +61,14 @@ import CestDescription from "./CestDescription";
 class CestSection extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   render() {
-    const testText = "In a story, there are a set of tasks required, these tasks should be fleshed out during estimation of the user story and linked in the team's issue tracker."
+    const testText = "In a story, there are a set of 1234 tasks required, these tasks should be fleshed out during estimation of the user story and linked in the team's issue tracker."
     return (
       <div>
         <CestContainer>
+          <CestDescription fontStyle="'Pragati Narrow', sans-serif" cestText={testText} />
+        </CestContainer>
+        <CestContainer>
           <CestDescription cestText={testText} />
-
-          {/* <WorkCestDescription>
-            2 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </WorkCestDescription>
-
-          <ArchivoCestDescription>
-            3 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </ArchivoCestDescription>
-
-          <CestDescription>
-            4 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </CestDescription>
-
-          <RobotoCestDescription>
-            5 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </RobotoCestDescription>
-
-          <NunitoCestDescription>
-            7 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </NunitoCestDescription>
-
-          <SignikaCestDescription>
-            8 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </SignikaCestDescription>
-
-          <HeeboCestDescription>
-            10 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </HeeboCestDescription>
-
-          <RubikCestDescription>
-            11 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </RubikCestDescription>
-
-          <PragatiCestDescription>
-            12 In a story, there are a set of tasks required, these tasks should
-            be fleshed out during estimation of the user story and linked in the
-            team's issue tracker.
-          </PragatiCestDescription> */}
         </CestContainer>
       </div>
     );
