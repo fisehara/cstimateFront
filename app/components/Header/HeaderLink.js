@@ -14,6 +14,8 @@ export default styled(Link)`
 
   &:hover {
     background: ${globalColors._cestprimary};
-    color: ${globalColors._background};
+    //color: ${globalColors._background};
+    color: ${globalColors._cestsecond};
+
   }
 `;

@@ -31,7 +31,8 @@ const StyledIcon = styled(Icon)`
 
   &:hover #cesticon1,
   &:hover #cesticon2 {
-    fill: #fff;
+    fill: ${globalColors._cestsecond};
+    //fill: #fff;
     // stroke:  ${globalColors._cestprimary};
   }
 `;

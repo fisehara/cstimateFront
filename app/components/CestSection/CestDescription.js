@@ -36,7 +36,7 @@ const CestTextDiv = styled.div`
   padding: 0.35em 0.35em;
   border-radius: 0.25em;
   word-wrap: break-word;
-
+  cursor: pointer;
   font-size: 14px;
   line-height: 20px;
   font-family: ${props => props.fontStyle};
