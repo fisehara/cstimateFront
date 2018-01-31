@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 
 const CestTextarea = styled.textarea`
-  width: calc(100% - 50px);
+  width: 100%;
   margin: 5px 10px;
   height: 6em;
   border-radius: 0.25em;
@@ -17,7 +17,7 @@ const CestTextarea = styled.textarea`
   filter: brightness(105%);
   word-wrap: break-word;
   resize: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-family: ${props => props.fontStyle};
   :focus {
@@ -26,7 +26,7 @@ const CestTextarea = styled.textarea`
 `;
 
 const CestTextDiv = styled.div`
-  width: calc(100% - 50px);
+width: 100%;
   height: 6em;
   margin: 5px 10px;
   color: ${globalColors._text};
@@ -34,7 +34,7 @@ const CestTextDiv = styled.div`
   border-radius: 0.25em;
   word-wrap: break-word;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-family: ${props => props.fontStyle};
 `;

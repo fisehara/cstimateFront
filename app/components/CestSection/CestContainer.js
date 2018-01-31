@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 import CestDescription from "./CestDescription";
+import CestEstimation from "./CestEstimation";
 
 import Icon from "!svg-react-loader?name=Icon!../../images/zestPath.svg";
 
@@ -28,9 +29,18 @@ const StyledIcon = styled(Icon)`
   }
 `;
 
+const ContainerCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 50px);
+`;
+
 export default props => (
   <CestContainer>
     <StyledIcon />
-    <CestDescription fontStyle={props.fontStyle} cestText={props.cestText} />
+    <ContainerCol>
+      <CestDescription fontStyle={props.fontStyle} cestText={props.cestText} />
+      <CestEstimation />
+    </ContainerCol>
   </CestContainer>
 );
