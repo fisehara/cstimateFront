@@ -9,7 +9,7 @@ class CestSection extends React.Component {
     const testText =
       "In a story, 0123456789 there are a set of tasks required, these tasks should be fleshed out during estimation of the user story and linked in the team's issue.";
     return (
-      <div style={{display: "flex", flexDirection: "column"}}>
+      <div>
         <CestContainer
             fontStyle="'Work Sans', sans-serif"
             cestText={"5 " + testText}

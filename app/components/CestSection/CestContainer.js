@@ -7,14 +7,9 @@ import CestEstimation from "./CestEstimation";
 import Icon from "!svg-react-loader?name=Icon!../../images/zestPath.svg";
 
 const CestContainer = styled.div`
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
   display: flex;
   background: ${globalColors._cestsecond};
+  max-width: 30em;
 `;
 
 const StyledIcon = styled(Icon)`

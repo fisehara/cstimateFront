@@ -14,26 +14,6 @@ export default styled(Link)`
   color: ${globalColors._button};
   background: ${globalColors._background};
 
-  // &:before {
-  //   content: "";
-  //   position: fixed;
-  //   z-index: -1;
-  //   left: 0px;
-  //   right: 0px;
-  //   // right: calc(100% - 15px);
-  //   top: 0px;
-  //   // background: ${globalColors._accent};
-  //   height: 4px;
-  //   -webkit-transform: translateY(-5px);
-  //   transform: translateY(-5px);
-  //   -webkit-transition-property: transform;
-  //   transition-property: transform;
-  //   -webkit-transition-duration: 5s;
-  //   transition-duration: 5s;
-  //   -webkit-transition-timing-function: ease-out;
-  //   transition-timing-function: ease-out;
-  // }
-
   &:hover {
     display: inline-block;
     -webkit-transform: perspective(0) translateZ(0);
