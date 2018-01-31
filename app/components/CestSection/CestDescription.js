@@ -4,16 +4,14 @@ import { globalColors } from "../../globalColors";
 
 const CestTextarea = styled.textarea`
   width: calc(100% - 50px);
+  margin: 5px 10px;
   height: 6em;
-  display: block;
-  margin: 5px 45px;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
   -webkit-box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
   -moz-box-shadow: inset 0 0 2pt 1pt ${globalColors._shadow};
   box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
-
   color: ${globalColors._text};
   background: ${globalColors._cestsecond};
   filter: brightness(105%);
@@ -30,10 +28,9 @@ const CestTextarea = styled.textarea`
 const CestTextDiv = styled.div`
   width: calc(100% - 50px);
   height: 6em;
+  margin: 5px 10px;
   color: ${globalColors._text};
   background: ${globalColors._cestsecond};
-  display: block;
-  margin: 5px 45px;
   border-radius: 0.25em;
   word-wrap: break-word;
   cursor: pointer;

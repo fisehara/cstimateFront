@@ -5,7 +5,6 @@ import A from "./A";
 import Img from "./Img";
 import NavBar from "./NavBar";
 import HeaderLink from "./HeaderLink";
-import zestPath from "./zestPath.svg";
 import messages from "./messages";
 import Icon from "./Icon";
 

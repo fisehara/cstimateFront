@@ -2,6 +2,8 @@
 export const globalColors = {
   _cestsecond: '#FFECA5',
   _cestprimary: '#FFC02C',
+  _cestprimgrey: '#c0c0c0',
+  _cestsecgrey: '#e0e0e0',
   _cesttext: '#2D251E',
   _accent: '#2D251E',
   _accent_dark : '#122B4A',
