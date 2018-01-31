@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 
 const CestTextarea = styled.textarea`
-  width: 100%;
+  width: calc(100% - 50px);
   height: 6em;
   display: block;
-  padding: 0.35em 0.35em;
+  margin: 5px 45px;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
@@ -28,12 +28,12 @@ const CestTextarea = styled.textarea`
 `;
 
 const CestTextDiv = styled.div`
-  width: 100%;
+  width: calc(100% - 50px);
   height: 6em;
   color: ${globalColors._text};
   background: ${globalColors._cestsecond};
   display: block;
-  padding: 0.35em 0.35em;
+  margin: 5px 45px;
   border-radius: 0.25em;
   word-wrap: break-word;
   cursor: pointer;

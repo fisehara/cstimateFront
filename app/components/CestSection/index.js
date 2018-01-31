@@ -23,12 +23,12 @@ class CestSection extends React.Component {
             cestText={"2 " + testText}
           />
         </CestContainer> */}
-        <CestContainer>
+        {/* <CestContainer>
           <CestDescription
             fontStyle="'Rubik', sans-serif"
             cestText={"3 " + testText}
           />
-        </CestContainer>
+        </CestContainer> */}
         {/* <CestContainer>
           <CestDescription
             fontStyle="'Istok Web', sans-serif"
@@ -41,12 +41,12 @@ class CestSection extends React.Component {
             cestText={"5 " + testText}
           />
         </CestContainer>
-        <CestContainer>
+        {/* <CestContainer>
           <CestDescription
             fontStyle="'Archivo', sans-serif"
             cestText={"6 " + testText}
           />
-        </CestContainer>
+        </CestContainer> */}
         {/* <CestContainer>
           <CestDescription
             fontStyle="'Heebo', sans-serif"

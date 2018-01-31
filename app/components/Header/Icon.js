@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 import Img from "./Img";
 
-import Icon from "!svg-react-loader?name=Icon!./zestPath.svg";
+import Icon from "!svg-react-loader?name=Icon!../../images/zestPath.svg";
 
 const LinkSvg = styled(Link)`
   display: flex;
