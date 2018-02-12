@@ -10,11 +10,11 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Source Code Pro';
+    font-family: 'Work Sans', sans-serif;
   }
 
   body.fontLoaded {
-    font-family: 'Source Code Pro';
+    font-family: 'Work Sans', sans-serif
   }
 
   #app {
@@ -23,9 +23,8 @@ injectGlobal`
     min-width: 100%;
   }
 
-  p,
   label {
-    font-family: 'Playfair Display';
+    font-family: 'Inconsolata';
     line-height: 1.5em;
   }
 `;

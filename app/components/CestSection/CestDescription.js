@@ -13,7 +13,7 @@ const CestTextarea = styled.textarea`
   -moz-box-shadow: inset 0 0 2pt 1pt ${globalColors._shadow};
   box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
   color: ${globalColors._text};
-  background: ${globalColors._cestsecond};
+  background: ${globalColors._cestthird};
   filter: brightness(105%);
   word-wrap: break-word;
   resize: none;
@@ -30,7 +30,7 @@ width: 100%;
   height: 6em;
   margin: 5px 10px;
   color: ${globalColors._text};
-  background: ${globalColors._cestsecond};
+  background: ${globalColors._cestthird};
   border-radius: 0.25em;
   word-wrap: break-word;
   cursor: pointer;
