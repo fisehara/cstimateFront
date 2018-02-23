@@ -1,7 +1,7 @@
 // https://coolors.co/fffefd-2d251e-ffc02c-0000a0-ffeca5
 export const globalColors = {
   _cestsecond: '#FFECA5',
-  _cestthird: '#FFF3D8',
+  _cestthird: '#FFFAE8',
   _cestprimary: '#FFC02C',
   _cestprimgrey: '#c0c0c0',
   _cestsecgrey: '#e0e0e0',

@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { globalColors } from "../../globalColors";
 import MenuButton from "./MenuButton";
-
+import CestEstimation from "./CestEstimation";
 
 const CestTextarea = styled.textarea`
   width: 100%;
   margin-top: 5px;
   margin-left: 10px;
-  padding-left:5pt;
-  padding-top:5pt;
+  padding-left: 5pt;
+  padding-top: 5pt;
   height: 6em;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
@@ -31,7 +31,7 @@ const CestTextarea = styled.textarea`
 `;
 
 const CestTextDiv = styled.div`
-width: 100%;
+  width: 100%;
   height: 6em;
   margin-left: 10px;
   margin-top: 5px;
@@ -42,17 +42,36 @@ width: 100%;
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
-  padding-left:2pt;
-  padding-top:2pt;
+  padding-left: 2pt;
+  padding-top: 2pt;
   font-family: ${props => props.fontStyle};
 `;
 
 const CestTextMenuDiv = styled.div`
   height: 38px;
   width: 100%;
-  margin: 5px 10px;
+  margin-left: 10px;
+  margin-top: 5px;
 `;
 
+const CestTextHeader = styled.div`
+  height: 38px;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 900;
+`;
+
+const CestMenuButton = styled(MenuButton)`
+  background: ${globalColors._cestthird};
+  color: ${globalColors._cestprimary};
+
+&:hover {
+  
+  color: ${globalColors._cestprimary};
+  background: ${globalColors._cestsecond};
+}
+`;
 
 export default props => (
   <CestTextField text={props.cestText} fontStyle={props.fontStyle} />
@@ -98,25 +117,31 @@ class CestTextField extends React.Component {
   renderNormal = () => {
     // ** Render "state.text" inside your <p> whether its empty or not...
     return (
-      <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
-        {this.state.text}
-      </CestTextDiv>
+      <div>
+        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
+          {this.state.text}
+        </CestTextDiv>
+        <CestEstimation />
+      </div>
     );
   };
   renderForm = () => {
     return (
       <div>
-      <CestTextarea
-        onBlur={this.save}
-        onDragEnterCapture={this.save}
-        value={this.state.text}
-        onChange={this.updateText}
-        autoFocus={true}
-        fontStyle={this.state.fontStyle}
-      />
-      <CestTextMenuDiv>
-        <MenuButton> Speichern </MenuButton>
-      </CestTextMenuDiv>
+        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextarea
+          onBlur={this.save}
+          onDragEnterCapture={this.save}
+          value={this.state.text}
+          onChange={this.updateText}
+          autoFocus={true}
+          fontStyle={this.state.fontStyle}
+        />
+        <CestEstimation />
+        <CestTextMenuDiv>
+          <CestMenuButton> Save </CestMenuButton>
+        </CestTextMenuDiv>
       </div>
     );
   };

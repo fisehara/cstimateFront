@@ -14,11 +14,11 @@ class CestSection extends React.Component {
             fontStyle="'Work Sans', sans-serif"
             cestText={"5 " + testText}
           />
-          <br/>
-        <CestContainer
+          {/* <br/>
+         <CestContainer
             fontStyle="'Inconsolata', monospace"
             cestText={"10 " + testText}
-          />
+          /> */}
       </div>
     );
   }
