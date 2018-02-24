@@ -48,6 +48,7 @@ const CestTextDiv = styled.div`
 `;
 
 const CestTextMenuDiv = styled.div`
+
   height: 38px;
   width: 100%;
   margin-left: 10px;
@@ -55,6 +56,7 @@ const CestTextMenuDiv = styled.div`
 `;
 
 const CestTextHeader = styled.div`
+font-family: Oswald, sans-serif;
   height: 38px;
   width: 100%;
   margin-left: 10px;
@@ -118,7 +120,7 @@ class CestTextField extends React.Component {
     // ** Render "state.text" inside your <p> whether its empty or not...
     return (
       <div>
-        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextHeader> Whats the estimation for: </CestTextHeader>
         <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
           {this.state.text}
         </CestTextDiv>
@@ -129,7 +131,7 @@ class CestTextField extends React.Component {
   renderForm = () => {
     return (
       <div>
-        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextHeader> Whats the estimation for: </CestTextHeader>
         <CestTextarea
           onBlur={this.save}
           onDragEnterCapture={this.save}

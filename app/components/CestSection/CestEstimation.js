@@ -22,11 +22,22 @@ const CestEstUnit = styled.button`
   display: flex;
   padding: 8px 32px;
   text-decoration: none;
-  font-family: Roboto, sans-serif;
+  font-family: Oswald, sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: ${globalColors._cestprimary};
   background: ${globalColors._background};
+`;
+
+const CestEstSelect = styled.select`
+  padding: 8px 32px;
+  text-decoration: none;
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  border-radius: 0px;
+  appearance: none;       /* remove default arrow */
+  color: ${globalColors._cestprimary};
+  background: ${globalColors._cestthird};
 `;
 
 export default props => <CestTextField metric={props.metric} />;
@@ -45,24 +56,24 @@ class CestTextField extends React.Component {
       <CestEstDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
         <CestEstDivRow>
         <div>
-          <select>
+          <CestEstSelect>
             <option>Hours</option>
             <option>Action Points</option>
             <option>T-Shirt Sizes</option>
-          </select>
+          </CestEstSelect>
         </div>
         <div>
-          <select>
+          <CestEstSelect>
             <option>10</option>
             <option>50</option>
             <option>100</option>
             <option>200</option>
             <option>500</option>
             <option>1000</option>
-          </select>
+          </CestEstSelect>
         </div>
         <div>
-          <select>
+          <CestEstSelect>
             <option>1h</option>
             <option>4h</option>
             <option>12h</option>
@@ -70,22 +81,22 @@ class CestTextField extends React.Component {
             <option>48h</option>
             <option>72h</option>
             <option>168h</option>
-          </select>
+          </CestEstSelect>
         </div>
         </CestEstDivRow>
         <CestEstDivRow>
-        <select>
+        <CestEstSelect>
           <option value="1">js</option>
           <option value="2">python</option>
           <option value="2">c#</option>
           <option value="2">c++</option>
-        </select>
-        <select multiple>
+        </CestEstSelect>
+        <CestEstSelect multiple>
           <option value="1">nodejs</option>
           <option value="2">express</option>
           <option value="2">graphql</option>
           <option value="2">django</option>
-        </select>
+        </CestEstSelect>
         </CestEstDivRow>
       </CestEstDiv>
     );
