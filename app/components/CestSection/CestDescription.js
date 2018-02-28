@@ -7,9 +7,9 @@ import CestEstimation from "./CestEstimation";
 const CestTextarea = styled.textarea`
   width: 100%;
   margin-top: 5px;
-  margin-left: 10px;
-  padding-left: 5pt;
-  padding-top: 5pt;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
   height: 6em;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
@@ -42,21 +42,18 @@ const CestTextDiv = styled.div`
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
-  padding-left: 2pt;
-  padding-top: 2pt;
   font-family: ${props => props.fontStyle};
 `;
 
 const CestTextMenuDiv = styled.div`
-
   height: 38px;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 5px;
 `;
 
 const CestTextHeader = styled.div`
-font-family: Oswald, sans-serif;
+  font-family: Oswald, sans-serif;
   height: 38px;
   width: 100%;
   margin-left: 10px;
@@ -68,11 +65,10 @@ const CestMenuButton = styled(MenuButton)`
   background: ${globalColors._cestthird};
   color: ${globalColors._cestprimary};
 
-&:hover {
-  
-  color: ${globalColors._cestprimary};
-  background: ${globalColors._cestsecond};
-}
+  &:hover {
+    color: ${globalColors._cestprimary};
+    background: ${globalColors._cestsecond};
+  }
 `;
 
 export default props => (
