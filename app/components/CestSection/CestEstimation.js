@@ -9,13 +9,25 @@ const CestEstDiv = styled.div`
   max-width: 30em;
 `;
 
-const CestEstDivRow = styled.div`
-  height: 30px;
-  margin-top: 5px;
-  margin-left: 5px;
-  display: flex;
-`;
+// const CestEstDivRow = styled.div`
+//   height: 30px;
+//   margin-top: 5px;
+//   margin-left: 5px;
+//   display: flex;
+// `;
 
+const CestEstDivRow = styled.div`
+
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid ${globalColors._cestprimary};
+  border-bottom: 2px solid ${globalColors._cestprimary};
+  background: ${globalColors._background};
+`;
 const CestEstUnit = styled.button`
   display: flex;
   text-decoration: none;
@@ -30,23 +42,19 @@ const CestEstSelect = styled.select`
   text-decoration: none;
   font-family: Oswald, sans-serif;
   font-size: 16px;
+  font-weight:900;
   border-radius: 0px;
   appearance: none; /* remove default arrow */
-  background: ${globalColors._cestthird};
-  color: ${globalColors._backgroundKicker};
-  font-weight: 900;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
+  padding: 8px 32px;
   height: 30px;
-  padding: 5px 5px;
-  -webkit-box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
-  -moz-box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
-  box-shadow: inset 0 0 2pt -1pt ${globalColors._shadow};
+  text-align: center;
+  color: ${globalColors._cestprimary};
+  background: ${globalColors._background};
 
   &:hover {
-    color: ${globalColors._backgroundKicker};
-    background: ${globalColors._cestsecond};
+    background: ${globalColors._cestprimary};
+    color: ${globalColors._cestsecond};
+
   }
 
 `;
@@ -94,20 +102,6 @@ class CestTextField extends React.Component {
               <option>168h</option>
             </CestEstSelect>
           </div>
-        </CestEstDivRow>
-        <CestEstDivRow>
-          <CestEstSelect>
-            <option value="1">js</option>
-            <option value="2">python</option>
-            <option value="2">c#</option>
-            <option value="2">c++</option>
-          </CestEstSelect>
-          <CestEstSelect multiple>
-            <option value="1">nodejs</option>
-            <option value="2">express</option>
-            <option value="2">graphql</option>
-            <option value="2">django</option>
-          </CestEstSelect>
         </CestEstDivRow>
       </CestEstDiv>
     );

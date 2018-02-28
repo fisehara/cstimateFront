@@ -13,7 +13,6 @@ export default styled.button`
 
   &:hover {
     background: ${globalColors._cestprimary};
-    //color: ${globalColors._background};
     color: ${globalColors._cestsecond};
 
   }

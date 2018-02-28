@@ -10,7 +10,7 @@ const CestTextarea = styled.textarea`
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  height: 6em;
+  height: 7em;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
@@ -54,6 +54,7 @@ const CestTextMenuDiv = styled.div`
 
 const CestTextHeader = styled.div`
   font-family: Oswald, sans-serif;
+  font-size: 16px;
   height: 38px;
   width: 100%;
   margin-left: 10px;
