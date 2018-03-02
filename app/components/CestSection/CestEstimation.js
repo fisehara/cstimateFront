@@ -17,9 +17,7 @@ const CestEstDiv = styled.div`
 // `;
 
 const CestEstDivRow = styled.div`
-
   display: flex;
-  width: 100%;
   margin-top: 5px;
   margin-left: 10px;
   align-items: center;
@@ -42,11 +40,11 @@ const CestEstSelect = styled.select`
   text-decoration: none;
   font-family: Oswald, sans-serif;
   font-size: 16px;
-  font-weight:900;
+  font-weight: 900;
   border-radius: 0px;
   appearance: none; /* remove default arrow */
   padding: 8px 32px;
-  height: 30px;
+  height: 32px;
   text-align: center;
   color: ${globalColors._cestprimary};
   background: ${globalColors._background};
@@ -55,8 +53,28 @@ const CestEstSelect = styled.select`
     background: ${globalColors._cestprimary};
     color: ${globalColors._cestsecond};
 
+    background-image: linear-gradient(
+        30deg,
+        transparent 50%,
+        ${globalColors._cestsecond} 50%
+      ),
+      linear-gradient(150deg, ${globalColors._cestsecond} 50%, transparent 50%);
+    background-position: calc(100% - 20px) 15px, calc(100% - 10px) 15px,
+      calc(100% - 5px) 15px;
+    background-size: 10px 8px, 10px 8px;
+    background-repeat: no-repeat;
   }
 
+  background-image: linear-gradient(
+      30deg,
+      transparent 50%,
+      ${globalColors._cestprimary} 50%
+    ),
+    linear-gradient(150deg, ${globalColors._cestprimary} 50%, transparent 50%);
+  background-position: calc(100% - 20px) 15px, calc(100% - 10px) 15px,
+    calc(100% - 5px) 15px;
+  background-size: 10px 8px, 10px 8px;
+  background-repeat: no-repeat;
 `;
 
 export default props => <CestTextField metric={props.metric} />;
