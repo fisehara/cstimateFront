@@ -10,7 +10,7 @@ const CestTextarea = styled.textarea`
   margin-left: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  height: 7em;
+  height: 5em;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
@@ -32,7 +32,7 @@ const CestTextarea = styled.textarea`
 
 const CestTextDiv = styled.div`
   width: 100%;
-  height: 6em;
+  height: 5em;
   margin-left: 10px;
   margin-top: 5px;
   color: ${globalColors._text};
@@ -117,7 +117,7 @@ class CestTextField extends React.Component {
     // ** Render "state.text" inside your <p> whether its empty or not...
     return (
       <div>
-        <CestTextHeader> Whats the estimation for: </CestTextHeader>
+        <CestTextHeader> Estimate this: </CestTextHeader>
         <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
           {this.state.text}
         </CestTextDiv>
@@ -128,7 +128,7 @@ class CestTextField extends React.Component {
   renderForm = () => {
     return (
       <div>
-        <CestTextHeader> Whats the estimation for: </CestTextHeader>
+        <CestTextHeader> Estimate this: </CestTextHeader>
         <CestTextarea
           onBlur={this.save}
           onDragEnterCapture={this.save}

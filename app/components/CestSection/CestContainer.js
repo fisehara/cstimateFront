@@ -8,12 +8,13 @@ import Icon from "!svg-react-loader?name=Icon!../../images/zestPath.svg";
 const CestContainer = styled.div`
   display: flex;
   background: ${globalColors._cestthird};
-  max-width: 30em;
+
 `;
 
 const StyledIcon = styled(Icon)`
   height: 30px;
   width: 30px;
+  min-width: 15px;
   margin: 5px 0px;
   #cesticon1 {
     fill: ${globalColors._cestsecond};
@@ -27,6 +28,8 @@ const ContainerCol = styled.div`
   display: flex;
   flex-direction: column;
   width: calc(100% - 50px);
+  max-width: 44em;
+  min-width: 40em;
 `;
 
 export default props => (

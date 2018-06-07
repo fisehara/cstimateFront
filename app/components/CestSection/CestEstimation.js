@@ -6,7 +6,6 @@ const CestEstDiv = styled.div`
   margin-top: 5px;
   display: flex;
   background: ${globalColors._cestthird};
-  max-width: 30em;
 `;
 
 // const CestEstDivRow = styled.div`
@@ -16,16 +15,29 @@ const CestEstDiv = styled.div`
 //   display: flex;
 // `;
 
+const CestEstDivSpacer = styled.div`
+font-family: Oswald, sans-serif;
+font-size: 14px;
+font-weight: 900;
+border-radius: 0px;
+align-items: center;
+color: ${globalColors._cestprimary};
+background: ${globalColors._background};
+width:9em;
+margin-right: 25px;
+`;
+
 const CestEstDivRow = styled.div`
   display: flex;
   margin-top: 5px;
   margin-left: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   border-top: 2px solid ${globalColors._cestprimary};
   border-bottom: 2px solid ${globalColors._cestprimary};
   background: ${globalColors._background};
 `;
+
 const CestEstUnit = styled.button`
   display: flex;
   text-decoration: none;
@@ -45,6 +57,7 @@ const CestEstSelect = styled.select`
   appearance: none; /* remove default arrow */
   padding: 8px 32px;
   height: 32px;
+  width:9em;
   text-align: center;
   color: ${globalColors._cestprimary};
   background: ${globalColors._background};
@@ -92,23 +105,32 @@ class CestTextField extends React.Component {
     return (
       <CestEstDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
         <CestEstDivRow>
+          <CestEstDivSpacer>
+            {/* <CestEstSelect>
+              <option>Hours</option> */}
+              Action Points
+              {/* <option>T-Shirt Sizes</option>
+            </CestEstSelect> */}
+          </CestEstDivSpacer>
           <div>
             <CestEstSelect>
-              <option>Hours</option>
-              <option>Action Points</option>
-              <option>T-Shirt Sizes</option>
+              <option>0.5</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>5</option>
+              <option>8</option>
+              <option>13</option>
+              <option>21</option>
             </CestEstSelect>
           </div>
-          <div>
-            <CestEstSelect>
-              <option>10</option>
-              <option>50</option>
-              <option>100</option>
-              <option>200</option>
-              <option>500</option>
-              <option>1000</option>
-            </CestEstSelect>
-          </div>
+          <CestEstDivSpacer>
+            {/* <CestEstSelect>
+              <option>Hours</option> */}
+              Estimation Duration
+              {/* <option>T-Shirt Sizes</option>
+            </CestEstSelect> */}
+          </CestEstDivSpacer>
           <div>
             <CestEstSelect>
               <option>1h</option>
