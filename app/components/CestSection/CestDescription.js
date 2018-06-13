@@ -7,10 +7,10 @@ import CestEstimation from "./CestEstimation";
 const CestTextarea = styled.textarea`
   width: 100%;
   margin-top: 5px;
-  margin-left: 10px;
-  padding-left: 5pt;
-  padding-top: 5pt;
-  height: 6em;
+  margin-left: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  height: 7em;
   border-radius: 0.25em;
   -webkit-font-smoothing: antialiased;
   -webkit-touch-callout: none;
@@ -42,19 +42,19 @@ const CestTextDiv = styled.div`
   cursor: pointer;
   font-size: 16px;
   line-height: 20px;
-  padding-left: 2pt;
-  padding-top: 2pt;
   font-family: ${props => props.fontStyle};
 `;
 
 const CestTextMenuDiv = styled.div`
   height: 38px;
   width: 100%;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-top: 5px;
 `;
 
 const CestTextHeader = styled.div`
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
   height: 38px;
   width: 100%;
   margin-left: 10px;
@@ -66,11 +66,10 @@ const CestMenuButton = styled(MenuButton)`
   background: ${globalColors._cestthird};
   color: ${globalColors._cestprimary};
 
-&:hover {
-  
-  color: ${globalColors._cestprimary};
-  background: ${globalColors._cestsecond};
-}
+  &:hover {
+    color: ${globalColors._cestprimary};
+    background: ${globalColors._cestsecond};
+  }
 `;
 
 export default props => (
@@ -118,7 +117,7 @@ class CestTextField extends React.Component {
     // ** Render "state.text" inside your <p> whether its empty or not...
     return (
       <div>
-        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextHeader> Whats the estimation for: </CestTextHeader>
         <CestTextDiv onClick={this.edit} fontStyle={this.state.fontStyle}>
           {this.state.text}
         </CestTextDiv>
@@ -129,7 +128,7 @@ class CestTextField extends React.Component {
   renderForm = () => {
     return (
       <div>
-        <CestTextMenuDiv> Whats the estimation for: </CestTextMenuDiv>
+        <CestTextHeader> Whats the estimation for: </CestTextHeader>
         <CestTextarea
           onBlur={this.save}
           onDragEnterCapture={this.save}
